@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: silver;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container-header {
+    background-color: #162e44;
+    color: white;
+    padding: 2rem 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-bar ul {
+    display: flex;
+}
+.nav-bar ul li {
+    margin: 0 0.5rem;
+}
+.nav-bar ul li a {
+    color: white;
+}
+.nav-bar ul li a:hover {
+    color: silver;
+}
+
+/*rede-social*/
+.rede-social ul {
+    display: flex;
+}
+.rede-social ul i {
+    margin: 0 0.5rem;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0.2rem;
+}
+.rede-social ul i:hover {
+    color: #162e44;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+
+.container-about {
+    background-image: url(../img/fundo.jpeg);
+    background-position: center;
+    background-size: cover;
+    padding: 15rem 0 5rem 5rem;
+    color: white;
+    margin: 2rem 0;
+}
+.container-about h6 {
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.container-about h1 {
+    font-size: 50px;
+    margin: 1rem 0;
+}
+.container-about button {
+    font-size: 15px;
+    padding: 0.5rem 1.5rem;
+    background-color: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+    color: white;
+    margin-bottom: 5rem;
+}
+.container-about button:hover {
+    background-color: #50ba87;
+    border-color: transparent;
+    transition: 0.5s;
+}
+
+.container-imgs {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: -90px;
+}
+.container-imgs article {
+    width: 20%;
+    margin: 0 1rem;
+}
+.container-imgs article img {
+    width: 100%;
+}
+
+
+footer {
+    margin-top: 5rem;
+    padding: 0.5rem;
+    text-align: center;
+}
