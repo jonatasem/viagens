@@ -1,112 +1,168 @@
+/* Reset de margens e preenchimentos */
 * {
     margin: 0;
     padding: 0;
 }
 
+/* Estilização do corpo do documento */
 body {
     width: 100%;
     margin: 0 auto;
-    overflow-x: hidden;
-    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden; /* Previne rolagem horizontal */
+    font-family: Arial, Helvetica, sans-serif; /* Fonte padrão */
 }
 
+/* Estilização de links */
 a {
-    text-decoration: none;
+    text-decoration: none; /* Remove sublinhado */
 }
 a:hover {
-    color: silver;
+    color: silver; /* Cor ao passar o mouse */
 }
 
+/* Estilização de listas */
 li {
-    list-style-type: none;
+    list-style-type: none; /* Remove marcadores de lista */
 }
 
+/* Estilização do cabeçalho */
 .container-header {
-    background-color: #162e44;
-    color: white;
+    background-color: #162e44; /* Cor de fundo do cabeçalho */
     padding: 2rem 5rem;
-    display: flex;
-    justify-content: space-between;
 }
+
+.desktop {
+    color: white; /* Cor do texto */
+    display: flex; /* Layout flexível */
+    justify-content: space-between; /* Espaçamento entre itens */
+}
+
+/* Estilização da barra de navegação */
 .nav-bar ul {
     display: flex;
 }
 .nav-bar ul li {
-    margin: 0 0.5rem;
+    margin: 0 0.5rem; /* Espaçamento entre itens */
 }
 .nav-bar ul li a {
-    color: white;
-}
-.nav-bar ul li a:hover {
-    color: silver;
+    color: white; /* Cor dos links */
 }
 
-/*rede-social*/
+/* Estilização da seção de redes sociais */
 .rede-social ul {
-    display: flex;
+    display: flex; /* Layout flexível para ícones */
 }
 .rede-social ul i {
-    margin: 0 0.5rem;
-    font-size: 20px;
-    cursor: pointer;
-    padding: 0.2rem;
+    margin: 0 0.5rem; /* Espaçamento entre ícones */
+    font-size: 20px; /* Tamanho dos ícones */
+    cursor: pointer; /* Cursor de pointer ao passar o mouse */
+    padding: 0.2rem; /* Preenchimento interno */
 }
 .rede-social ul i:hover {
-    color: #162e44;
-    background-color: white;
-    border-radius: 50%;
-    transition: 0.5s;
+    color: #162e44; /* Cor ao passar o mouse */
+    background-color: white; /* Fundo ao passar o mouse */
+    border-radius: 50%; /* Bordas arredondadas */
+    transition: 0.5s; /* Transição suave */
 }
 
-
+/* Estilização da seção sobre a empresa */
 .container-about {
-    background-image: url(../img/fundo.jpeg);
-    background-position: center;
-    background-size: cover;
-    padding: 15rem 0 5rem 5rem;
-    color: white;
-    margin: 2rem 0;
+    background-image: url(../img/fundo.jpeg); /* Imagem de fundo */
+    background-position: center; /* Centraliza a imagem */
+    background-size: cover; /* Cobre toda a área */
+    padding: 15rem 0 5rem 5rem; /* Preenchimento */
+    color: white; /* Cor do texto */
+    margin: 2rem 0; /* Margem */
 }
 .container-about h6 {
-    text-transform: uppercase;
-    font-size: 18px;
+    text-transform: uppercase; /* Letras maiúsculas */
+    font-size: 18px; /* Tamanho da fonte */
 }
 .container-about h1 {
-    font-size: 50px;
-    margin: 1rem 0;
+    font-size: 50px; /* Tamanho do título */
+    margin: 1rem 0; /* Margem */
 }
 .container-about button {
-    font-size: 15px;
-    padding: 0.5rem 1.5rem;
-    background-color: transparent;
-    border: 1px solid white;
-    cursor: pointer;
-    color: white;
-    margin-bottom: 5rem;
+    font-size: 15px; /* Tamanho da fonte do botão */
+    padding: 0.5rem 1.5rem; /* Preenchimento do botão */
+    background-color: transparent; /* Fundo transparente */
+    border: 1px solid white; /* Borda do botão */
+    cursor: pointer; /* Cursor de pointer */
+    color: white; /* Cor do texto do botão */
+    margin-bottom: 5rem; /* Margem inferior */
 }
 .container-about button:hover {
-    background-color: #50ba87;
-    border-color: transparent;
-    transition: 0.5s;
+    background-color: #50ba87; /* Cor de fundo ao passar o mouse */
+    border-color: transparent; /* Remove a borda ao passar o mouse */
+    transition: 0.5s; /* Transição suave */
 }
 
+/* Estilização da seção de imagens */
 .container-imgs {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-top: -90px;
+    display: flex; /* Layout flexível */
+    width: 100%; /* Largura total */
+    justify-content: center; /* Centraliza os artigos */
+    margin-top: -90px; /* Margem negativa para sobreposição */
 }
 .container-imgs article {
-    width: 20%;
-    margin: 0 1rem;
+    width: 20%; /* Largura dos artigos */
+    margin: 0 1rem; /* Margem entre os artigos */
 }
 .container-imgs article img {
-    width: 100%;
+    width: 100%; /* Imagens ocupam 100% do artigo */
 }
 
-
+/* Estilização do rodapé */
 footer {
-    margin-top: 5rem;
-    padding: 0.5rem;
-    text-align: center;
+    margin-top: 5rem; /* Margem superior */
+    padding: 0.5rem; /* Preenchimento */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+/* Estilização para dispositivos móveis */
+.mobile {
+    display: flex; /* Layout flexível */
+    justify-content: end; /* Alinha à direita */
+}
+.nav-mobile {
+    display: none; /* Inicialmente oculta a navegação móvel */
+}
+.icon-mobile {
+    display: none; /* Inicialmente oculta o ícone do menu móvel */
+    max-width: 45px; /* Largura máxima */
+}
+.icon-mobile img {
+    width: 100%; /* Imagem ocupa 100% da largura */
+}
+
+/* Media queries para responsividade */
+@media (max-width:1024px) {
+    .container-imgs article img {
+        min-width: 20%; /* Largura mínima das imagens */
+    }
+}
+
+@media (max-width:900px) {
+    .container-about {
+        padding: 10rem 0 8rem 2rem; /* Ajuste de preenchimento */
+    }
+    .container-imgs article {
+        min-width: none; /* Remove largura mínima */
+    }
+}
+
+@media (max-width:768px) {
+    .container-header {
+        padding: 2rem;
+    }
+
+    .desktop {
+        display: none; /* Oculta a navegação desktop */
+    }
+    .icon-mobile {
+        display: block; /* Exibe o ícone do menu móvel */
+    }
+    .icon-mobile {
+        text-align: end; /* Alinha o ícone à direita */
+    }
 }
